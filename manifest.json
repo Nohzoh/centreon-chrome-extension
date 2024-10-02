@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Centreon",
+  "version": "1.0",
+  "description": "This etensions enhance Centreon UI experience.",
+  "icons": {
+    "28": "icon-28.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "28": "icon-28.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "https://*/**/login" ],
+      "js": ["content_scripts.js"]
+    }
+  ],
+  "options_page": "options.html"
+}

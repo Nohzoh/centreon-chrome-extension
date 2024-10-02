@@ -1,0 +1,25 @@
+@startuml centreon-extension
+actor "User" as user
+package "Chrome Browser" {
+  [Centreon Web Page] 
+  [GitHub API]
+}
+
+package "Centreon Web Enhancer Extension" {
+  component "content.js" as content
+  component "background.js" as background
+  component "manifest.json" as manifest
+  component "popup.html" as popup
+}
+
+user --> [Centreon Web Page] : Visits
+[Centrale Web Page] --> content : Injects
+content --> [Centreon Web Page] : Checks Centreon Instance
+content --> [GitHub API] : Fetches latest versions
+content --> [Centreon Web Page] : Displays update banner
+
+background --> [GitHub API] : (Optional) Fetch version data
+manifest --> content : Defines content scripts
+popup --> content : (Optional) Interaction (UI)
+
+@enduml
