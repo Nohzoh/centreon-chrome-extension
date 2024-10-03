@@ -28,7 +28,7 @@ _Not yet available_
 
 1. Clone this repository to your local machine.
 ```bash
-git clone https://github.com/Nohzoh/centreon-chrome-extension.git
+git clone https://github.com/CentreonLabs/centreon-chrome-extension.git
 ```
 1. Open Chrome and go to chrome://extensions/.
 1. Enable Developer Mode in the top-right corner.
