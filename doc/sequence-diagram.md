@@ -6,10 +6,9 @@ sequenceDiagram
     participant GitHubAPI as GitHub API
     
     Browser->>Script: Load Page (window.onload)
-    Script->>Script: checkCentreonWebVersion()
+    Script->>Script: Detect Centreon instance (webpackChunkcentreon)
     
     alt Is Centreon instance?
-        Script->>Script: Detect Centreon instance (webpackChunkcentreon)
         Script->>CentreonAPI: Fetch current Centreon version (getCurrentCentreonVersion)
         CentreonAPI-->>Script: Return current version {major, minor}
         
