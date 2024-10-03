@@ -174,11 +174,15 @@ async function checkCentreonWebVersion() {
 }
 
 if (typeof window !== 'undefined') {
+  // Browser context
+
   // Run the check on page load
   window.onload = function () {
     setTimeout(checkCentreonWebVersion, 1000); // Delay by 1 seconds
   }
-};
+} else {
+  // Jest test context
 
-// Export the function for testing
-module.exports = { parseVersionString, fetchLatestCentreonWebVersions };
+  // Export the function for testing
+  module.exports = { parseVersionString, fetchLatestCentreonWebVersions };
+};
