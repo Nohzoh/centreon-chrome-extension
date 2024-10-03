@@ -1,6 +1,6 @@
-# Centreon Web Enhancer
+# Centreon Chrome Extension
 
-Centreon Web Enhancer is a Google Chrome extension designed to enhance the UI and UX of the Centreon platform. It offers real-time version checks and notifications, ensuring users are always aware when updates are available for their Centreon web instance. This helps maintain platform security, performance, and access to the latest features.
+Centreon Chrome Extension is a Google Chrome extension designed to enhance the UI and UX of the Centreon platform. It offers real-time version checks and notifications, ensuring users are always aware when updates are available for their Centreon web instance. This helps maintain platform security, performance, and access to the latest features.
 
 ## Features
 
