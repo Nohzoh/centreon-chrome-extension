@@ -22,16 +22,13 @@ The banner provides direct information about the latest available versions, ensu
 
 ### From the Chrome Web Store
 
-Not yet available
-1. Go to the Chrome Web Store and search for "Centreon Web Enhancer".
-1. Click the Add to Chrome button.
-1. Confirm the installation when prompted.
+_Not yet available_
 
 ### Manual Installation
 
 1. Clone this repository to your local machine.
 ```bash
-git clone https://github.com/your-username/centreon-web-enhancer.git
+git clone https://github.com/Nohzoh/centreon-chrome-extension.git
 ```
 1. Open Chrome and go to chrome://extensions/.
 1. Enable Developer Mode in the top-right corner.
